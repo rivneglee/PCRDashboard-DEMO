@@ -1,0 +1,41 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  &__sidebar {
+    margin-top: 60px;
+    display: none;
+  }
+
+  &__footer {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__sidebar {
+      display: block;
+    }
+    &__footer {
+      display: none;
+    }
+  }
+
+  &__content {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 668px) {
+      &--two-columns {
+        flex-direction: row;
+        display: flex;
+        height: fit-content;
+        > div {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}

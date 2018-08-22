@@ -1,0 +1,10 @@
+@import "../../variables";
+
+.footer {
+  position: fixed;
+  font-size: 10px;
+  bottom: 0px;
+  z-index: 4;
+  width: 100%;
+  box-shadow: 0 0 6px 2px $shadow-color;
+}

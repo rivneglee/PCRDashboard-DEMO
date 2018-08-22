@@ -1,0 +1,24 @@
+@import "../../variables";
+
+.task-details {
+  color: $font-color;
+  padding: 10px;
+}
+
+.console {
+  padding: 2px;
+  margin: 5px;
+  box-shadow: $shadow-color;
+  background-color: black;
+  &__log {
+    &--error {
+      color: red;
+    }
+    &--info {
+      color: white;
+    }
+    &--debug {
+      color: yellow;
+    }
+  }
+}

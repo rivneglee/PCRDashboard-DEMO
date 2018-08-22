@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.archives {
+  color: $font-color;
+  font-size: 2em;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px $shadow-color;
+  height: 100%;
+  &__record {
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+    margin: 5px;
+    &--date {
+      float: right;
+    }
+  }
+}

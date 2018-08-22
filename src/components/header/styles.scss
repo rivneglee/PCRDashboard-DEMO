@@ -1,0 +1,77 @@
+@import "../../variables";
+
+.header {
+  height: 60px;
+  width: 100%;
+  box-shadow: 0 0 6px 2px $shadow-color;
+  display: flex;
+  z-index: 3;
+  background-color: white;
+  position: fixed;
+  flex-direction: row;
+  &__title {
+    font-size: 18px;
+    color: #009688;
+    font-weight: bolder;
+    margin: 20px 20px 20px 10px;
+  }
+}
+
+.logo {
+  float: right;
+  margin: 10px 20px;
+  &--lines {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  &--lines div {
+    height: 20px;
+    width: 5px;
+    background: #FE4A49;
+    margin: 3px;
+    border-radius: 25px;
+  }
+  &--lines div:nth-child(1) {
+    animation: bounce 1s ease-in-out infinite 0s;
+  }
+  &--lines div:nth-child(2) {
+    animation: bounce 1s ease-in-out infinite 0.1s;
+  }
+  &--lines div:nth-child(3) {
+    animation: bounce 1s ease-in-out infinite 0.2s;
+  }
+  &--lines div:nth-child(4) {
+    animation: bounce 1s ease-in-out infinite 0.3s;
+  }
+  &--lines div:nth-child(5) {
+    animation: bounce 1s ease-in-out infinite 0.4s;
+  }
+  &--lines div:nth-child(6) {
+    animation: bounce 1s ease-in-out infinite 0.5s;
+  }
+  &--lines div:nth-child(7) {
+    animation: bounce 1s ease-in-out infinite 0.6s;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scaleY(1);
+      background: #FED766;
+    }
+    25% {
+      background: #009FB7;
+    }
+    50% {
+      transform: scaleY(2);
+      background: #59CD90;
+    }
+    75% {
+      background: #FE4A49;
+    }
+    100% {
+      transform: scaleY(1);
+      background: #D91E36;
+    }
+  }
+}

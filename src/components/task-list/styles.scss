@@ -1,0 +1,70 @@
+@import "../../variables";
+
+.tasks {
+  color: $font-color;
+  font-size: 2em;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px $shadow-color;
+  height: 100%;
+  &__message {
+    font-size: 15px;
+    margin-top: 10%;
+    text-align: center;
+  }
+  &__task {
+    font-size: 12px;
+    display: flex;
+    cursor: pointer;
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+    margin: 5px;
+    > div {
+      flex-grow: 1;
+    }
+    &__buttons {
+      margin-top: -5px;
+    }
+    &--subtitle {
+      font-size: 10px;
+    }
+    &--icon {
+      margin: 15px 6px 10px;
+    }
+    &--icon:hover {
+      color: deepskyblue;
+    }
+    &--canceled {
+      color: darkorange;
+    }
+    &--succeed {
+      color: yellowgreen;
+    }
+    &--error {
+      color: deeppink;
+    }
+  }
+}
+
+.bt-spinner {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 5px solid lightgray;
+  border-top-color: #009688;
+  -webkit-animation: 1s spin linear infinite;
+  animation: 1s spin linear infinite;
+
+  @keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+}
